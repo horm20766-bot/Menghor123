@@ -518,13 +518,19 @@ nav {
     justify-content: center;
 
     align-items: center;
+
+    position: absolute;
+
+    top: 20px;
+
+    right: -80%;
 }
 
 
 .profile-ring {
 
-    width: 350px;
-    height: 350px;
+    width: 380px;
+    height: 380px;
 
     border-radius: 50%;
 
