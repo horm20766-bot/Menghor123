@@ -1,466 +1,956 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Meng Hor - Software Developer Portfolio">
 
     <title>Meng Hor | Software Developer</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
+
 <body>
 
-    <!-- ================= NAVBAR ================= -->
-    <header class="navbar">
-        <div class="container nav-content">
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="container navbar">
+
+            <!-- Logo -->
 
             <a href="#home" class="logo">
                 Meng<span>Hor</span>
             </a>
 
-            <nav>
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#education">Education</a>
-                <a href="#contact">Contact</a>
+
+            <!-- Navigation -->
+
+            <nav id="navMenu">
+
+                <a href="#home" class="nav-link active">
+                    Home
+                </a>
+
+                <a href="#about" class="nav-link">
+                    About
+                </a>
+
+                <a href="#skills" class="nav-link">
+                    Skills
+                </a>
+
+                <a href="#projects" class="nav-link">
+                    Projects
+                </a>
+
+                <a href="#education" class="nav-link">
+                    Education
+                </a>
+
+                <a href="#contact" class="nav-link">
+                    Contact
+                </a>
+
             </nav>
 
-            <button id="themeBtn" class="theme-btn">
-                🌙
-            </button>
+
+            <!-- Header Buttons -->
+
+            <div class="header-buttons">
+
+                <button
+                    id="themeBtn"
+                    class="icon-btn"
+                    aria-label="Change Theme">
+                    🌙
+                </button>
+
+
+                <button
+                    id="menuBtn"
+                    class="menu-btn"
+                    aria-label="Open Menu">
+                    ☰
+                </button>
+
+            </div>
 
         </div>
+
     </header>
 
 
+
     <!-- ================= HOME ================= -->
-    <section id="home" class="hero">
 
-        <div class="container hero-content">
+    <main>
 
-            <div class="hero-text">
+        <section id="home" class="hero">
 
-                <p class="hello">Hello, I'm</p>
-
-                <h1>
-                    Meng <span>Hor</span>
-                </h1>
-
-                <h2>
-                    Software Developer
-                </h2>
-
-                <p class="description">
-                    I am a Software Development student who enjoys
-                    learning programming, building applications,
-                    and creating modern websites.
-                </p>
-
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn primary">
-                        View My Projects
-                    </a>
-
-                    <a href="#contact" class="btn secondary">
-                        Contact Me
-                    </a>
-                </div>
-
-            </div>
+            <div class="container hero-container">
 
 
-            <div class="hero-image">
+                <!-- Hero Text -->
 
-                <div class="image-circle">
+                <div class="hero-text reveal">
 
-                    <img
-                        src="images/profile.jpg"
-                        alt="Meng Hor Profile"
-                    >
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= ABOUT ================= -->
-    <section id="about" class="section">
-
-        <div class="container">
-
-            <div class="section-title">
-                <p>Get To Know Me</p>
-                <h2>About <span>Me</span></h2>
-            </div>
-
-            <div class="about-content">
-
-                <div class="about-card">
-                    <h3>Who I Am</h3>
-
-                    <p>
-                        Hello! My name is Meng Hor.
-                        I am studying Software Development
-                        and I am interested in programming,
-                        web development and application development.
+                    <p class="small-title">
+                        Hello, I'm
                     </p>
 
-                    <p>
-                        I enjoy learning new technologies
-                        and practicing by building real projects.
+
+                    <h1>
+                        Meng <span>Hor</span>
+                    </h1>
+
+
+                    <h2>
+                        Software Developer
+                    </h2>
+
+
+                    <p class="hero-description">
+
+                        I am a Software Development student
+                        who enjoys programming, building
+                        applications and creating modern websites.
+
                     </p>
-                </div>
 
 
-                <div class="about-info">
+                    <!-- Buttons -->
 
-                    <div class="info-box">
-                        <strong>Name</strong>
-                        <span>Meng Hor</span>
-                    </div>
+                    <div class="hero-buttons">
 
-                    <div class="info-box">
-                        <strong>Major</strong>
-                        <span>Software Development</span>
-                    </div>
+                        <a href="#projects"
+                        class="btn btn-primary">
+                            View My Projects
+                        </a>
 
-                    <div class="info-box">
-                        <strong>University</strong>
-                        <span>Norton University</span>
-                    </div>
-
-                    <div class="info-box">
-                        <strong>Role</strong>
-                        <span>Student Developer</span>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= SKILLS ================= -->
-    <section id="skills" class="section skills-section">
-
-        <div class="container">
-
-            <div class="section-title">
-                <p>What I Know</p>
-                <h2>My <span>Skills</span></h2>
-            </div>
-
-
-            <div class="skills-grid">
-
-                <div class="skill-card">
-                    <div class="skill-icon">C++</div>
-                    <h3>C++</h3>
-                    <p>
-                        Object-Oriented Programming,
-                        Classes and Data Structures.
-                    </p>
-                </div>
-
-
-                <div class="skill-card">
-                    <div class="skill-icon">Py</div>
-                    <h3>Python</h3>
-                    <p>
-                        Python programming,
-                        applications and automation.
-                    </p>
-                </div>
-
-
-                <div class="skill-card">
-                    <div class="skill-icon">HTML</div>
-                    <h3>HTML</h3>
-                    <p>
-                        Creating structured
-                        and semantic websites.
-                    </p>
-                </div>
-
-
-                <div class="skill-card">
-                    <div class="skill-icon">CSS</div>
-                    <h3>CSS</h3>
-                    <p>
-                        Responsive layouts,
-                        animations and modern UI.
-                    </p>
-                </div>
-
-
-                <div class="skill-card">
-                    <div class="skill-icon">JS</div>
-                    <h3>JavaScript</h3>
-                    <p>
-                        Interactive websites
-                        and dynamic interfaces.
-                    </p>
-                </div>
-
-
-                <div class="skill-card">
-                    <div class="skill-icon">DB</div>
-                    <h3>Database</h3>
-                    <p>
-                        Learning database design
-                        and data management.
-                    </p>
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= PROJECTS ================= -->
-    <section id="projects" class="section">
-
-        <div class="container">
-
-            <div class="section-title">
-                <p>My Recent Work</p>
-                <h2>My <span>Projects</span></h2>
-            </div>
-
-
-            <div class="projects-grid">
-
-                <div class="project-card">
-
-                    <div class="project-image">
-                        💻
-                    </div>
-
-                    <div class="project-content">
-
-                        <h3>Student Management System</h3>
-
-                        <p>
-                            A system for managing student
-                            information, scores and records.
-                        </p>
-
-                        <div class="project-tags">
-                            <span>Python</span>
-                            <span>PySide6</span>
-                        </div>
-
-                        <a href="#" class="project-link">
-                            View Project →
+                        <a href="cv/Meng-Hor-CV.pdf"
+                        class="btn btn-outline"
+                        download>
+                            📄 Download CV
                         </a>
 
                     </div>
 
-                </div>
 
+                    <!-- Social Links -->
 
-                <div class="project-card">
+                    <div class="social-links">
 
-                    <div class="project-image">
-                        🐍
-                    </div>
+                        <a href="https://github.com/horm20766-bot"
+                        target="_blank">
+                            GitHub
+                        </a>
 
-                    <div class="project-content">
+                        <a href="https://web.facebook.com/?ref=homescreenpwa&_rdc=1&_rdr#"
+                        target="_blank">
+                            Facebook
+                        </a>
 
-                        <h3>Product Management System</h3>
-
-                        <p>
-                            A product inventory system
-                            for managing stock and sales.
-                        </p>
-
-                        <div class="project-tags">
-                            <span>Python</span>
-                            <span>Database</span>
-                        </div>
-
-                        <a href="#" class="project-link">
-                            View Project →
+                        <a href="https://t.me/"
+                        target="_blank">
+                            Telegram
                         </a>
 
                     </div>
 
+
+
+                <!-- Profile -->
+
+                <div class="hero-image reveal">
+
+                    <div class="profile-ring">
+
+                        <div class="profile-image">
+
+                            <img
+                                src="images/profile.jpg"
+                                alt="Meng Hor Profile"
+                                onerror="this.style.display='none'; document.getElementById('profilePlaceholder').style.display='flex';"
+                            >
+
+                            <div
+                                id="profilePlaceholder"
+                                class="profile-placeholder">
+
+                                MH
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= ABOUT ================= -->
+
+        <section id="about"
+                 class="section">
+
+            <div class="container">
+
+
+                <div class="section-heading reveal">
+
+                    <p>Get To Know Me</p>
+
+                    <h2>
+                        About <span>Me</span>
+                    </h2>
+
                 </div>
 
 
-                <div class="project-card">
 
-                    <div class="project-image">
-                        🎮
-                    </div>
+                <div class="about-grid">
 
-                    <div class="project-content">
 
-                        <h3>C++ Quiz Game</h3>
+                    <div class="about-text reveal">
+
+                        <h3>
+                            I'm a Software Developer
+                        </h3>
+
 
                         <p>
-                            An interactive quiz game
-                            with multiple difficulty levels.
+
+                            Hello! My name is Meng Hor.
+                            I am interested in software development,
+                            programming and web development.
+
                         </p>
 
-                        <div class="project-tags">
-                            <span>C++</span>
-                            <span>OOP</span>
-                        </div>
 
-                        <a href="#" class="project-link">
-                            View Project →
+                        <p>
+
+                            I enjoy learning new technologies
+                            and improving my programming skills
+                            by building real projects.
+
+                        </p>
+
+
+                        <a href="#contact"
+                           class="btn btn-primary">
+
+                            Let's Talk
+
                         </a>
 
                     </div>
 
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
 
 
-    <!-- ================= EDUCATION ================= -->
-    <section id="education" class="section education-section">
+                    <div class="about-info reveal">
 
-        <div class="container">
+                        <div class="info-card">
 
-            <div class="section-title">
-                <p>My Learning Journey</p>
-                <h2>My <span>Education</span></h2>
-            </div>
+                            <span>👤</span>
 
+                            <div>
+                                <small>Name</small>
+                                <strong>Meng Hor</strong>
+                            </div>
 
-            <div class="education-card">
-
-                <div class="education-icon">
-                    🎓
-                </div>
-
-                <div>
-                    <h3>Norton University</h3>
-
-                    <p class="education-major">
-                        Software Development
-                    </p>
-
-                    <p>
-                        Studying programming,
-                        software development,
-                        database and web technologies.
-                    </p>
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
+                        </div>
 
 
-    <!-- ================= CONTACT ================= -->
-    <section id="contact" class="section">
+                        <div class="info-card">
 
-        <div class="container">
+                            <span>💻</span>
 
-            <div class="section-title">
-                <p>Let's Talk</p>
-                <h2>Contact <span>Me</span></h2>
-            </div>
+                            <div>
+                                <small>Major</small>
+                                <strong>Software Development</strong>
+                            </div>
+
+                        </div>
 
 
-            <div class="contact-content">
+                        <div class="info-card">
 
-                <div class="contact-info">
+                            <span>🎓</span>
 
-                    <h3>Get In Touch</h3>
+                            <div>
+                                <small>University</small>
+                                <strong>Norton University</strong>
+                            </div>
 
-                    <p>
-                        If you want to contact me,
-                        feel free to send me a message.
-                    </p>
+                        </div>
 
-                    <div class="contact-item">
-                        📧
-                        <span>Email: @horm2277gmail.com</span>
-                    </div>
 
-                    <div class="contact-item">
-                        📱
-                        <span>Number Phone: 0886016846</span>
-                    </div>
+                        <div class="info-card">
 
-                    <div class="contact-item">
-                        📍
-                        <span>Cambodia: ភូមិវាល ឃុំខ្នុលដំបង ស្រុកជើងព្រៃ ខេត្តកំពុងចាម</span>
+                            <span>🌎</span>
+
+                            <div>
+                                <small>Location</small>
+                                <strong>Cambodia</strong>
+                            </div>
+
+                        </div>
+
                     </div>
 
                 </div>
 
+            </div>
 
-                <form id="contactForm" class="contact-form">
+        </section>
 
-                    <input
-                        type="text"
-                        placeholder="Your Name"
-                        required
-                    >
 
-                    <input
-                        type="email"
-                        placeholder="Your Email"
-                        required
-                    >
 
-                    <textarea
-                        rows="6"
-                        placeholder="Your Message"
-                        required
-                    ></textarea>
+        <!-- ================= SKILLS ================= -->
 
-                    <button type="submit" class="btn primary">
-                        Send Message
-                    </button>
+        <section id="skills"
+                 class="section section-dark">
 
-                </form>
+            <div class="container">
+
+
+                <div class="section-heading reveal">
+
+                    <p>What I Know</p>
+
+                    <h2>
+                        My <span>Skills</span>
+                    </h2>
+
+                </div>
+
+
+
+                <div class="skills-grid">
+
+
+                    <div class="skill-card reveal">
+
+                        <div class="skill-icon">
+                            C++
+                        </div>
+
+                        <h3>C++</h3>
+
+                        <p>
+                            Object-Oriented Programming,
+                            Classes and Data Structures.
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="skill-card reveal">
+
+                        <div class="skill-icon">
+                            Py
+                        </div>
+
+                        <h3>Python</h3>
+
+                        <p>
+                            Python programming,
+                            applications and automation.
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="skill-card reveal">
+
+                        <div class="skill-icon">
+                            HTML
+                        </div>
+
+                        <h3>HTML</h3>
+
+                        <p>
+                            Building structured
+                            and semantic websites.
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="skill-card reveal">
+
+                        <div class="skill-icon">
+                            CSS
+                        </div>
+
+                        <h3>CSS</h3>
+
+                        <p>
+                            Responsive design,
+                            layouts and animations.
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="skill-card reveal">
+
+                        <div class="skill-icon">
+                            JS
+                        </div>
+
+                        <h3>JavaScript</h3>
+
+                        <p>
+                            Interactive websites
+                            and dynamic interfaces.
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="skill-card reveal">
+
+                        <div class="skill-icon">
+                            DB
+                        </div>
+
+                        <h3>Database</h3>
+
+                        <p>
+                            Learning database design
+                            and data management.
+                        </p>
+
+                    </div>
+
+                </div>
 
             </div>
 
-        </div>
+        </section>
 
-    </section>
+
+
+        <!-- ================= PROJECTS ================= -->
+
+        <section id="projects"
+                 class="section">
+
+            <div class="container">
+
+
+                <div class="section-heading reveal">
+
+                    <p>My Recent Work</p>
+
+                    <h2>
+                        My <span>Projects</span>
+                    </h2>
+
+                </div>
+
+
+
+                <div class="projects-grid">
+
+
+                    <!-- Project 1 -->
+
+                    <article class="project-card reveal">
+
+                        <div class="project-image">
+
+                            <img
+                                src="images/project1.jpg"
+                                alt="Student Management System"
+                                onerror="this.style.display='none';"
+                            >
+
+                            <div class="project-placeholder">
+                                
+                            </div>
+
+                        </div>
+
+
+                        <div class="project-content">
+
+                            <h3>
+                                Student Management System
+                            </h3>
+
+                            <p>
+
+                                A system for managing
+                                student information,
+                                scores and records.
+
+                            </p>
+
+
+                            <div class="tags">
+
+                                <span>Python</span>
+                                <span>PySide6</span>
+
+                            </div>
+
+
+                            <a href="#"
+                               class="project-link">
+
+                                View Project →
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- Project 2 -->
+
+                    <article class="project-card reveal">
+
+                        <div class="project-image">
+
+                            <img
+                                src="images/project2.jpg"
+                                alt="Product Management System"
+                                onerror="this.style.display='none';"
+                            >
+
+                            <div class="project-placeholder">
+                                
+                            </div>
+
+                        </div>
+
+
+                        <div class="project-content">
+
+                            <h3>
+                                Product Management System
+                            </h3>
+
+                            <p>
+
+                                A product inventory system
+                                for managing stock,
+                                purchases and sales.
+
+                            </p>
+
+
+                            <div class="tags">
+
+                                <span>Python</span>
+                                <span>Database</span>
+
+                            </div>
+
+
+                            <a href="#"
+                               class="project-link">
+
+                                View Project →
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- Project 3 -->
+
+                    <article class="project-card reveal">
+
+                        <div class="project-image">
+
+                            <img
+                                src="images/project3.jpg"
+                                alt="C++ Quiz Game"
+                                onerror="this.style.display='none';"
+                            >
+
+                            <div class="project-placeholder">
+                                
+                            </div>
+
+                        </div>
+
+
+                        <div class="project-content">
+
+                            <h3>
+                                C++ Quiz Game
+                            </h3>
+
+                            <p>
+
+                                An interactive quiz game
+                                with multiple difficulty
+                                levels and questions.
+
+                            </p>
+
+
+                            <div class="tags">
+
+                                <span>C++</span>
+                                <span>OOP</span>
+
+                            </div>
+
+
+                            <a href="#"
+                               class="project-link">
+
+                                View Project →
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= EDUCATION ================= -->
+
+        <section id="education"
+                 class="section section-dark">
+
+            <div class="container">
+
+
+                <div class="section-heading reveal">
+
+                    <p>My Learning Journey</p>
+
+                    <h2>
+                        My <span>Education</span>
+                    </h2>
+
+                </div>
+
+
+
+                <div class="timeline">
+
+
+                    <div class="timeline-item reveal">
+
+                        <div class="timeline-icon">
+                            🎓
+                        </div>
+
+
+                        <div class="timeline-content">
+
+                            <span>
+                                Current
+                            </span>
+
+                            <h3>
+                                Norton University
+                            </h3>
+
+                            <h4>
+                                Software Development
+                            </h4>
+
+                            <p>
+
+                                Studying programming,
+                                software development,
+                                database and web technologies.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= CONTACT ================= -->
+
+        <section id="contact"
+                 class="section">
+
+            <div class="container">
+
+
+                <div class="section-heading reveal">
+
+                    <p>Let's Talk</p>
+
+                    <h2>
+                        Contact <span>Me</span>
+                    </h2>
+
+                </div>
+
+
+
+                <div class="contact-grid">
+
+
+                    <!-- Contact Information -->
+
+                    <div class="contact-info reveal">
+
+                        <h3>
+                            Let's Work Together
+                        </h3>
+
+
+                        <p>
+
+                            If you have a project,
+                            question or opportunity,
+                            feel free to contact me.
+
+                        </p>
+
+
+                        <div class="contact-item">
+
+                            <div class="contact-icon">
+                                📧
+                            </div>
+
+                            <div>
+
+                                <small>Email</small>
+
+                                <a href="mailto:your-email@example.com">
+                                    horm20766@gmail.com
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="contact-item">
+
+                            <div class="contact-icon">
+                                📱
+                            </div>
+
+                            <div>
+
+                                <small>Phone</small>
+
+                                <span>
+                                    +855 88 601 684 6
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="contact-item">
+
+                            <div class="contact-icon">
+                                📍
+                            </div>
+
+                            <div>
+
+                                <small>Location</small>
+
+                                <span>
+                                    Cambodia
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- Contact Form -->
+
+                    <form id="contactForm"
+                          class="contact-form reveal">
+
+
+                        <div class="input-group">
+
+                            <label>
+                                Your Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="name"
+                                placeholder="Enter your name"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="input-group">
+
+                            <label>
+                                Your Email
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                placeholder="Enter your email"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="input-group">
+
+                            <label>
+                                Message
+                            </label>
+
+                            <textarea
+                                id="message"
+                                rows="6"
+                                placeholder="Write your message..."
+                                required>
+                            </textarea>
+
+                        </div>
+
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary">
+
+                            Send Message 🚀
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
 
 
     <!-- ================= FOOTER ================= -->
+
     <footer>
 
-        <div class="container">
+        <div class="container footer-content">
 
-            <p>
-                © 2026 Meng Hor. All Rights Reserved.
-            </p>
+            <div>
+
+                <a href="#home"
+                   class="logo">
+
+                    Meng<span>Hor</span>
+
+                </a>
+
+                <p>
+                    Software Developer Portfolio
+                </p>
+
+            </div>
+
+
+            <div class="footer-socials">
+
+                <a href="https://github.com/"
+                   target="_blank">
+                    GitHub
+                </a>
+
+                <a href="#">
+                    Facebook
+                </a>
+
+                <a href="#">
+                    Telegram
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+
+            © 2026 Meng Hor.
+            All Rights Reserved.
 
         </div>
 
     </footer>
 
 
+
+    <!-- ================= BACK TO TOP ================= -->
+
+    <button
+        id="topBtn"
+        class="top-btn"
+        aria-label="Back to Top">
+
+        ↑
+
+    </button>
+
+
+
     <script src="script.js"></script>
 
 </body>
+
 </html>
