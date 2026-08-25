@@ -2,954 +2,1124 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-    <meta name="description"
-          content="Meng Hor - Software Developer Portfolio">
+    <meta
+        name="description"
+        content="LinkQR - Professional QR Code Generator"
+    >
 
-    <title>Meng Hor | Software Developer</title>
+    <title>LinkQR - Professional QR Generator</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
 </head>
 
 
 <body>
 
-    <!-- ================= HEADER ================= -->
 
-    <header class="header">
+<!-- =========================================
+     NAVBAR
+========================================= -->
 
-        <div class="container navbar">
+<header class="navbar">
 
-            <!-- Logo -->
+    <div class="nav-container">
 
-            <a href="#home" class="logo">
-                Meng<span>Hor</span>
+
+        <a
+            href="#home"
+            class="logo"
+        >
+
+            <span class="logo-icon">
+                🔗
+            </span>
+
+            <span>
+                LinkQR
+            </span>
+
+        </a>
+
+
+        <nav class="nav-menu">
+
+            <a href="#home">
+                Home
             </a>
 
+            <a href="#generator">
+                Generator
+            </a>
 
-            <!-- Navigation -->
+            <a href="#history">
+                History
+            </a>
 
-            <nav id="navMenu">
-
-                <a href="#home" class="nav-link active">
-                    Home
-                </a>
-
-                <a href="#about" class="nav-link">
-                    About
-                </a>
-
-                <a href="#skills" class="nav-link">
-                    Skills
-                </a>
-
-                <a href="#projects" class="nav-link">
-                    Projects
-                </a>
-
-                <a href="#education" class="nav-link">
-                    Education
-                </a>
-
-                <a href="#contact" class="nav-link">
-                    Contact
-                </a>
-
-            </nav>
+        </nav>
 
 
-            <!-- Header Buttons -->
-
-            <div class="header-buttons">
-
-                <button
-                    id="themeBtn"
-                    class="icon-btn"
-                    aria-label="Change Theme">
-                    🌙
-                </button>
+        <button
+            id="themeBtn"
+            class="theme-btn"
+            title="Change Theme"
+        >
+            🌙
+        </button>
 
 
-                <button
-                    id="menuBtn"
-                    class="menu-btn"
-                    aria-label="Open Menu">
-                    ☰
-                </button>
+    </div>
+
+</header>
+
+
+
+<!-- =========================================
+     MAIN
+========================================= -->
+
+<main>
+
+
+<!-- =========================================
+     HERO
+========================================= -->
+
+<section
+    id="home"
+    class="hero"
+>
+
+    <div class="hero-content">
+
+
+        <div class="badge">
+            ⚡ PROFESSIONAL QR GENERATOR
+        </div>
+
+
+        <h1>
+
+            Create
+
+            <span>
+                Powerful
+            </span>
+
+            QR Codes
+
+        </h1>
+
+
+        <p>
+
+            Create beautiful,
+            customizable and
+            downloadable QR Codes
+            in seconds.
+
+        </p>
+
+
+        <a
+            href="#generator"
+            class="hero-btn"
+        >
+
+            Start Creating
+
+            <span>
+                →
+            </span>
+
+        </a>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     GENERATOR
+========================================= -->
+
+<section
+    id="generator"
+    class="generator-section"
+>
+
+
+    <div class="section-title">
+
+
+        <span class="section-badge">
+            QR GENERATOR
+        </span>
+
+
+        <h2>
+            Professional QR Studio
+        </h2>
+
+
+        <p>
+            Customize every part of
+            your QR Code.
+        </p>
+
+
+    </div>
+
+
+
+    <div class="advanced-generator">
+
+
+
+        <!-- =================================
+             SETTINGS
+        ================================== -->
+
+        <div class="settings-panel">
+
+
+            <h3>
+                ⚙️ Customize QR Code
+            </h3>
+
+
+
+            <!-- QR TYPE -->
+
+            <div class="form-group">
+
+                <label>
+                    QR Type
+                </label>
+
+
+                <div class="type-buttons">
+
+
+                    <button
+                        class="type-btn active"
+                        data-type="url"
+                    >
+                        🔗 URL
+                    </button>
+
+
+                    <button
+                        class="type-btn"
+                        data-type="text"
+                    >
+                        📝 Text
+                    </button>
+
+
+                    <button
+                        class="type-btn"
+                        data-type="wifi"
+                    >
+                        📶 Wi-Fi
+                    </button>
+
+
+                    <button
+                        class="type-btn"
+                        data-type="email"
+                    >
+                        📧 Email
+                    </button>
+
+
+                    <button
+                        class="type-btn"
+                        data-type="phone"
+                    >
+                        📞 Phone
+                    </button>
+
+
+                </div>
 
             </div>
+
+
+
+            <!-- =================================
+                 URL
+            ================================== -->
+
+            <div
+                id="urlForm"
+                class="qr-form"
+            >
+
+                <div class="form-group">
+
+                    <label>
+                        Website URL
+                    </label>
+
+
+                    <input
+                        type="url"
+                        id="urlInput"
+                        placeholder="https://example.com"
+                    >
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================
+                 TEXT
+            ================================== -->
+
+            <div
+                id="textForm"
+                class="qr-form hidden"
+            >
+
+                <div class="form-group">
+
+                    <label>
+                        Text
+                    </label>
+
+
+                    <textarea
+                        id="textInput"
+                        rows="5"
+                        placeholder="Enter your text..."
+                    ></textarea>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================
+                 WIFI
+            ================================== -->
+
+            <div
+                id="wifiForm"
+                class="qr-form hidden"
+            >
+
+
+                <div class="form-group">
+
+                    <label>
+                        Wi-Fi Name
+                    </label>
+
+
+                    <input
+                        type="text"
+                        id="wifiName"
+                        placeholder="My Wi-Fi"
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        Password
+                    </label>
+
+
+                    <input
+                        type="text"
+                        id="wifiPassword"
+                        placeholder="Wi-Fi Password"
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        Security
+                    </label>
+
+
+                    <select
+                        id="wifiSecurity"
+                    >
+
+                        <option value="WPA">
+                            WPA / WPA2
+                        </option>
+
+                        <option value="WEP">
+                            WEP
+                        </option>
+
+                        <option value="nopass">
+                            No Password
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- =================================
+                 EMAIL
+            ================================== -->
+
+            <div
+                id="emailForm"
+                class="qr-form hidden"
+            >
+
+
+                <div class="form-group">
+
+                    <label>
+                        Email Address
+                    </label>
+
+
+                    <input
+                        type="email"
+                        id="emailAddress"
+                        placeholder="example@gmail.com"
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        Subject
+                    </label>
+
+
+                    <input
+                        type="text"
+                        id="emailSubject"
+                        placeholder="Subject"
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        Message
+                    </label>
+
+
+                    <textarea
+                        id="emailMessage"
+                        rows="4"
+                        placeholder="Your message..."
+                    ></textarea>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- =================================
+                 PHONE
+            ================================== -->
+
+            <div
+                id="phoneForm"
+                class="qr-form hidden"
+            >
+
+                <div class="form-group">
+
+                    <label>
+                        Phone Number
+                    </label>
+
+
+                    <input
+                        type="tel"
+                        id="phoneInput"
+                        placeholder="+855 12 345 678"
+                    >
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================
+                 COLORS
+            ================================== -->
+
+            <div class="settings-row">
+
+
+                <div class="form-group">
+
+                    <label>
+                        QR Color
+                    </label>
+
+
+                    <div class="color-input">
+
+
+                        <input
+                            type="color"
+                            id="qrColor"
+                            value="#000000"
+                        >
+
+
+                        <span
+                            id="qrColorValue"
+                        >
+                            #000000
+                        </span>
+
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="form-group">
+
+                    <label>
+                        Background
+                    </label>
+
+
+                    <div class="color-input">
+
+
+                        <input
+                            type="color"
+                            id="bgColor"
+                            value="#ffffff"
+                        >
+
+
+                        <span
+                            id="bgColorValue"
+                        >
+                            #FFFFFF
+                        </span>
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- =================================
+                 SIZE
+            ================================== -->
+
+            <div class="form-group">
+
+                <label>
+                    QR Size
+                </label>
+
+
+                <select
+                    id="qrSize"
+                >
+
+                    <option value="300">
+                        300 × 300
+                    </option>
+
+                    <option
+                        value="500"
+                        selected
+                    >
+                        500 × 500
+                    </option>
+
+                    <option value="700">
+                        700 × 700
+                    </option>
+
+                    <option value="1000">
+                        1000 × 1000
+                    </option>
+
+                </select>
+
+            </div>
+
+
+
+            <!-- =================================
+                 LOGO
+            ================================== -->
+
+            <div class="form-group">
+
+                <label>
+                    Logo
+                </label>
+
+
+                <input
+                    type="file"
+                    id="logoInput"
+                    accept="image/png,image/jpeg,image/webp"
+                >
+
+
+                <small>
+                    PNG, JPG or WEBP
+                </small>
+
+            </div>
+
+
+
+            <!-- =================================
+                 LOGO SETTINGS
+            ================================== -->
+
+            <div
+                id="logoSettings"
+                class="logo-settings"
+            >
+
+
+                <div class="form-group">
+
+                    <label>
+                        Logo Size
+                    </label>
+
+
+                    <input
+                        type="range"
+                        id="logoSize"
+                        min="30"
+                        max="100"
+                        value="55"
+                    >
+
+
+                    <div class="range-value">
+
+                        <span>
+                            Size
+                        </span>
+
+                        <strong id="logoSizeValue">
+                            55px
+                        </strong>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="form-group">
+
+                    <label>
+                        Logo Background
+                    </label>
+
+
+                    <div class="color-input">
+
+
+                        <input
+                            type="color"
+                            id="logoBgColor"
+                            value="#ffffff"
+                        >
+
+
+                        <span
+                            id="logoBgColorValue"
+                        >
+                            #FFFFFF
+                        </span>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- =================================
+                 GENERATE
+            ================================== -->
+
+            <button
+                id="generateAdvancedBtn"
+                class="generate-btn"
+            >
+
+                ⚡ Generate QR Code
+
+            </button>
+
 
         </div>
 
-    </header>
+
+
+        <!-- =================================
+             PREVIEW
+        ================================== -->
+
+        <div class="preview-panel">
+
+
+            <div class="preview-header">
+
+
+                <h3>
+                    👀 Live Preview
+                </h3>
+
+
+                <span id="qrStatus">
+                    Ready
+                </span>
+
+
+            </div>
 
 
 
-    <!-- ================= HOME ================= -->
-
-    <main>
-
-        <section id="home" class="hero">
-
-            <div class="container hero-container">
+            <div class="qr-preview">
 
 
-                <!-- Hero Text -->
+                <!-- EMPTY -->
 
-                <div class="hero-text reveal">
+                <div
+                    id="qrEmpty"
+                    class="qr-empty"
+                >
 
-                    <p class="small-title">
-                        Hello, I'm
+                    <div class="empty-icon">
+                        📱
+                    </div>
+
+
+                    <h3>
+                        QR Code Preview
+                    </h3>
+
+
+                    <p>
+                        Configure your QR Code
+                        and click Generate.
                     </p>
 
 
-                    <h1>
-                        Meng <span>Hor</span>
-                    </h1>
-
-
-                    <h2>
-                        Software Developer
-                    </h2>
-
-
-                    <p class="hero-description">
-
-                        I am a Software Development student
-                        who enjoys programming, building
-                        applications and creating modern websites.
-
-                    </p>
-
-
-                    <!-- Buttons -->
-
-                    <div class="hero-buttons">
-
-                        <a href="#projects"
-                        class="btn btn-primary">
-                            View My Projects
-                        </a>
-
-                        <a href="cv/Meng-Hor-CV.pdf"
-                        class="btn btn-outline"
-                        download>
-                            📄 Download CV
-                        </a>
-
-                    </div>
-
-
-                    <!-- Social Links -->
-
-                    <div class="social-links">
-
-                        <a href="https://github.com/horm20766-bot"
-                        target="_blank">
-                            GitHub
-                        </a>
-
-                        <a href="https://web.facebook.com/?ref=homescreenpwa&_rdc=1&_rdr#"
-                        target="_blank">
-                            Facebook
-                        </a>
-
-                        <a href="https://t.me/menghorlove"
-                        target="_blank">
-                            Telegram
-                        </a>
-
-                    </div>
+                </div>
 
 
 
-                <!-- Profile -->
+                <!-- RESULT -->
 
-                <div class="hero-image reveal">
+                <div
+                    id="qrResult"
+                    class="qr-result"
+                >
 
-                    <div class="profile-ring">
 
-                        <div class="profile-image">
+                    <div
+                        id="qrCanvas"
+                        class="qr-canvas"
+                    >
+
+
+                        <img
+                            id="qrImage"
+                            src=""
+                            alt="QR Code"
+                        >
+
+
+                        <div
+                            id="logoWrapper"
+                            class="logo-wrapper"
+                        >
+
 
                             <img
-                                src="images/profile.jpg"
-                                alt="Meng Hor Profile"
-                                onerror="this.style.display='none'; document.getElementById('profilePlaceholder').style.display='flex';"
+                                id="qrLogo"
+                                src=""
+                                alt="Logo"
                             >
 
-                            <div
-                                id="profilePlaceholder"
-                                class="profile-placeholder">
-
-                                MH
-
-                            </div>
 
                         </div>
 
+
                     </div>
 
-                </div>
-
-            </div>
-
-        </section>
 
 
+                    <div class="qr-info">
 
-        <!-- ================= ABOUT ================= -->
-
-        <section id="about"
-                 class="section">
-
-            <div class="container">
-
-
-                <div class="section-heading reveal">
-
-                    <p>Get To Know Me</p>
-
-                    <h2>
-                        About <span>Me</span>
-                    </h2>
-
-                </div>
-
-
-
-                <div class="about-grid">
-
-
-                    <div class="about-text reveal">
 
                         <h3>
-                            I'm a Software Developer
+                            QR Code Ready 🎉
                         </h3>
 
 
-                        <p>
-
-                            Hello! My name is Meng Hor.
-                            I am interested in software development,
-                            programming and web development.
-
+                        <p
+                            id="qrContent"
+                        >
+                            Your content
+                            will appear here.
                         </p>
 
 
-                        <p>
-
-                            I enjoy learning new technologies
-                            and improving my programming skills
-                            by building real projects.
-
-                        </p>
-
-
-                        <a href="#contact"
-                           class="btn btn-primary">
-
-                            Let's Talk
-
-                        </a>
-
                     </div>
 
 
 
-                    <div class="about-info reveal">
-
-                        <div class="info-card">
-
-                            <span>👤</span>
-
-                            <div>
-                                <small>Name</small>
-                                <strong>Meng Hor</strong>
-                            </div>
-
-                        </div>
-
-
-                        <div class="info-card">
-
-                            <span>💻</span>
-
-                            <div>
-                                <small>Major</small>
-                                <strong>Software Development</strong>
-                            </div>
-
-                        </div>
-
-
-                        <div class="info-card">
-
-                            <span>🎓</span>
-
-                            <div>
-                                <small>University</small>
-                                <strong>Norton University</strong>
-                            </div>
-
-                        </div>
-
-
-                        <div class="info-card">
-
-                            <span>🌎</span>
-
-                            <div>
-                                <small>Location</small>
-                                <strong>Cambodia</strong>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- ================= SKILLS ================= -->
-
-        <section id="skills"
-                 class="section section-dark">
-
-            <div class="container">
-
-
-                <div class="section-heading reveal">
-
-                    <p>What I Know</p>
-
-                    <h2>
-                        My <span>Skills</span>
-                    </h2>
-
-                </div>
-
-
-
-                <div class="skills-grid">
-
-
-                    <div class="skill-card reveal">
-
-                        <div class="skill-icon">
-                            C++
-                        </div>
-
-                        <h3>C++</h3>
-
-                        <p>
-                            Object-Oriented Programming,
-                            Classes and Data Structures.
-                        </p>
-
-                    </div>
-
-
-
-                    <div class="skill-card reveal">
-
-                        <div class="skill-icon">
-                            Py
-                        </div>
-
-                        <h3>Python</h3>
-
-                        <p>
-                            Python programming,
-                            applications and automation.
-                        </p>
-
-                    </div>
-
-
-
-                    <div class="skill-card reveal">
-
-                        <div class="skill-icon">
-                            HTML
-                        </div>
-
-                        <h3>HTML</h3>
-
-                        <p>
-                            Building structured
-                            and semantic websites.
-                        </p>
-
-                    </div>
-
-
-
-                    <div class="skill-card reveal">
-
-                        <div class="skill-icon">
-                            CSS
-                        </div>
-
-                        <h3>CSS</h3>
-
-                        <p>
-                            Responsive design,
-                            layouts and animations.
-                        </p>
-
-                    </div>
-
-
-
-                    <div class="skill-card reveal">
-
-                        <div class="skill-icon">
-                            JS
-                        </div>
-
-                        <h3>JavaScript</h3>
-
-                        <p>
-                            Interactive websites
-                            and dynamic interfaces.
-                        </p>
-
-                    </div>
-
-
-
-                    <div class="skill-card reveal">
-
-                        <div class="skill-icon">
-                            DB
-                        </div>
-
-                        <h3>Database</h3>
-
-                        <p>
-                            Learning database design
-                            and data management.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- ================= PROJECTS ================= -->
-
-        <section id="projects"
-                 class="section">
-
-            <div class="container">
-
-
-                <div class="section-heading reveal">
-
-                    <p>My Recent Work</p>
-
-                    <h2>
-                        My <span>Projects</span>
-                    </h2>
-
-                </div>
-
-
-
-                <div class="projects-grid">
-
-
-                    <!-- Project 1 -->
-
-                    <article class="project-card reveal">
-
-                        <div class="project-image">
-
-                            <img
-                                src="images/project1.jpg"
-                                alt="Student Management System"
-                                onerror="this.style.display='none';"
-                            >
-
-                            <div class="project-placeholder">
-                                
-                            </div>
-
-                        </div>
-
-
-                        <div class="project-content">
-
-                            <h3>
-                                Student Management System
-                            </h3>
-
-                            <p>
-
-                                A system for managing
-                                student information,
-                                scores and records.
-
-                            </p>
-
-
-                            <div class="tags">
-
-                                <span>Python</span>
-                                <span>PySide6</span>
-
-                            </div>
-
-
-                            <a href="#"
-                               class="project-link">
-
-                                View Project →
-
-                            </a>
-
-                        </div>
-
-                    </article>
-
-
-
-                    <!-- Project 2 -->
-
-                    <article class="project-card reveal">
-
-                        <div class="project-image">
-
-                            <img
-                                src="images/project2.jpg"
-                                alt="Product Management System"
-                                onerror="this.style.display='none';"
-                            >
-
-                            <div class="project-placeholder">
-                                
-                            </div>
-
-                        </div>
-
-
-                        <div class="project-content">
-
-                            <h3>
-                                Product Management System
-                            </h3>
-
-                            <p>
-
-                                A product inventory system
-                                for managing stock,
-                                purchases and sales.
-
-                            </p>
-
-
-                            <div class="tags">
-
-                                <span>Python</span>
-                                <span>Database</span>
-
-                            </div>
-
-
-                            <a href="#"
-                               class="project-link">
-
-                                View Project →
-
-                            </a>
-
-                        </div>
-
-                    </article>
-
-
-
-                    <!-- Project 3 -->
-
-                    <article class="project-card reveal">
-
-                        <div class="project-image">
-
-                            <img
-                                src="images/project3.jpg"
-                                alt="C++ Quiz Game"
-                                onerror="this.style.display='none';"
-                            >
-
-                            <div class="project-placeholder">
-                                
-                            </div>
-
-                        </div>
-
-
-                        <div class="project-content">
-
-                            <h3>
-                                C++ Quiz Game
-                            </h3>
-
-                            <p>
-
-                                An interactive quiz game
-                                with multiple difficulty
-                                levels and questions.
-
-                            </p>
-
-
-                            <div class="tags">
-
-                                <span>C++</span>
-                                <span>OOP</span>
-
-                            </div>
-
-
-                            <a href="#"
-                               class="project-link">
-
-                                View Project →
-
-                            </a>
-
-                        </div>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- ================= EDUCATION ================= -->
-
-        <section id="education"
-                 class="section section-dark">
-
-            <div class="container">
-
-
-                <div class="section-heading reveal">
-
-                    <p>My Learning Journey</p>
-
-                    <h2>
-                        My <span>Education</span>
-                    </h2>
-
-                </div>
-
-
-
-                <div class="timeline">
-
-
-                    <div class="timeline-item reveal">
-
-                        <div class="timeline-icon">
-                            🎓
-                        </div>
-
-
-                        <div class="timeline-content">
-
-                            <span>
-                                Current
-                            </span>
-
-                            <h3>
-                                Norton University
-                            </h3>
-
-                            <h4>
-                                Software Development
-                            </h4>
-
-                            <p>
-
-                                Studying programming,
-                                software development,
-                                database and web technologies.
-
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- ================= CONTACT ================= -->
-
-        <section id="contact"
-                 class="section">
-
-            <div class="container">
-
-
-                <div class="section-heading reveal">
-
-                    <p>Let's Talk</p>
-
-                    <h2>
-                        Contact <span>Me</span>
-                    </h2>
-
-                </div>
-
-
-
-                <div class="contact-grid">
-
-
-                    <!-- Contact Information -->
-
-                    <div class="contact-info reveal">
-
-                        <h3>
-                            Let's Work Together
-                        </h3>
-
-
-                        <p>
-
-                            If you have a project,
-                            question or opportunity,
-                            feel free to contact me.
-
-                        </p>
-
-
-                        <div class="contact-item">
-
-                            <div class="contact-icon">
-                                📧
-                            </div>
-
-                            <div>
-
-                                <small>Email</small>
-
-                                <a href="mailto:your-email@example.com">
-                                    horm20766@gmail.com
-                                </a>
-
-                            </div>
-
-                        </div>
-
-
-                        <div class="contact-item">
-
-                            <div class="contact-icon">
-                                📱
-                            </div>
-
-                            <div>
-
-                                <small>Phone</small>
-
-                                <span>
-                                    +855 88 601 684 6
-                                </span>
-
-                            </div>
-
-                        </div>
-
-
-                        <div class="contact-item">
-
-                            <div class="contact-icon">
-                                📍
-                            </div>
-
-                            <div>
-
-                                <small>Location</small>
-
-                                <span>
-                                    Cambodia
-                                </span>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-
-                    <!-- Contact Form -->
-
-                    <form id="contactForm"
-                          class="contact-form reveal">
-
-
-                        <div class="input-group">
-
-                            <label>
-                                Your Name
-                            </label>
-
-                            <input
-                                type="text"
-                                id="name"
-                                placeholder="Enter your name"
-                                required
-                            >
-
-                        </div>
-
-
-                        <div class="input-group">
-
-                            <label>
-                                Your Email
-                            </label>
-
-                            <input
-                                type="email"
-                                id="email"
-                                placeholder="Enter your email"
-                                required
-                            >
-
-                        </div>
-
-
-                        <div class="input-group">
-
-                            <label>
-                                Message
-                            </label>
-
-                            <textarea
-                                id="message"
-                                rows="6"
-                                placeholder="Write your message..."
-                                required>
-                            </textarea>
-
-                        </div>
+                    <div class="qr-actions">
 
 
                         <button
-                            type="submit"
-                            class="btn btn-primary">
+                            id="downloadBtn"
+                            class="action-btn download-btn"
+                        >
 
-                            Send Message 🚀
+                            📥 Download PNG
 
                         </button>
 
-                    </form>
+
+                        <button
+                            id="copyBtn"
+                            class="action-btn copy-btn"
+                        >
+
+                            📋 Copy Content
+
+                        </button>
+
+
+                    </div>
+
 
                 </div>
 
+
             </div>
 
-        </section>
 
-    </main>
-
+        </div>
 
 
-    <!-- ================= FOOTER ================= -->
+    </div>
 
-    <footer>
 
-        <div class="container footer-content">
+</section>
 
-            <div>
 
-                <a href="#home"
-                   class="logo">
 
-                    Meng<span>Hor</span>
+<!-- =========================================
+     FEATURES
+========================================= -->
 
-                </a>
+<section
+    class="features-section"
+>
+
+
+    <div class="section-title">
+
+
+        <span class="section-badge">
+            FEATURES
+        </span>
+
+
+        <h2>
+            Powerful Features
+        </h2>
+
+
+    </div>
+
+
+
+    <div class="features-grid">
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                🔗
+            </div>
+
+            <h3>
+                URL QR
+            </h3>
+
+            <p>
+                Convert website links
+                into QR Codes.
+            </p>
+
+        </div>
+
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                📶
+            </div>
+
+            <h3>
+                Wi-Fi QR
+            </h3>
+
+            <p>
+                Share Wi-Fi information
+                quickly.
+            </p>
+
+        </div>
+
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                🎨
+            </div>
+
+            <h3>
+                Custom Colors
+            </h3>
+
+            <p>
+                Choose your own QR
+                and background colors.
+            </p>
+
+        </div>
+
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                🖼️
+            </div>
+
+            <h3>
+                Logo Support
+            </h3>
+
+            <p>
+                Add your own logo
+                to the QR Code.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     HISTORY
+========================================= -->
+
+<section
+    id="history"
+    class="history-section"
+>
+
+
+    <div class="section-title">
+
+
+        <span class="section-badge">
+            HISTORY
+        </span>
+
+
+        <h2>
+            Recent QR Codes
+        </h2>
+
+
+    </div>
+
+
+
+    <div class="history-card">
+
+
+        <div class="history-header">
+
+
+            <h3>
+                🕘 QR History
+            </h3>
+
+
+            <button
+                id="clearHistoryBtn"
+                class="clear-history-btn"
+            >
+
+                🗑️ Clear History
+
+            </button>
+
+
+        </div>
+
+
+
+        <div
+            id="historyList"
+            class="history-list"
+        >
+
+
+            <div
+                id="emptyHistory"
+                class="empty-history"
+            >
+
+                <div>
+                    📝
+                </div>
+
 
                 <p>
-                    Software Developer Portfolio
+                    No QR Code history yet.
                 </p>
 
-            </div>
-
-
-            <div class="footer-socials">
-
-                <a href="https://github.com/"
-                   target="_blank">
-                    GitHub
-                </a>
-
-                <a href="#">
-                    Facebook
-                </a>
-
-                <a href="#">
-                    Telegram
-                </a>
 
             </div>
+
 
         </div>
 
 
-        <div class="copyright">
+    </div>
 
-            © 2026 Meng Hor.
-            All Rights Reserved.
 
+</section>
+
+
+</main>
+
+
+
+<!-- =========================================
+     FOOTER
+========================================= -->
+
+<footer class="footer">
+
+
+    <div class="footer-container">
+
+
+        <div class="footer-logo">
+            🔗 LinkQR
         </div>
 
-    </footer>
+
+        <p>
+            Professional QR Code Generator
+        </p>
+
+
+        <div class="footer-line"></div>
+
+
+        <p class="copyright">
+            © 2026 LinkQR.
+            All rights reserved.
+            _____Meng Hor_____
+        </p>
+
+
+    </div>
+
+
+</footer>
 
 
 
-    <!-- ================= BACK TO TOP ================= -->
+<!-- =========================================
+     BACK TO TOP
+========================================= -->
 
-    <button
-        id="topBtn"
-        class="top-btn"
-        aria-label="Back to Top">
+<button
+    id="backToTop"
+    class="back-to-top"
+>
 
-        ↑
+    ↑
 
-    </button>
+</button>
 
 
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
 
 </body>
 
