@@ -15,7 +15,7 @@
         content="LinkQR - Professional QR Code Generator"
     >
 
-    <title>LinkQR - Professional QR Generator</title>
+    <title>LinkQR — QR Studio</title>
 
     <link
         rel="stylesheet"
@@ -28,32 +28,32 @@
 <body>
 
 
-<!-- =========================================
+<!-- ==================================================
      NAVBAR
-========================================= -->
+================================================== -->
 
 <header class="navbar">
 
-    <div class="nav-container">
+    <div class="container nav-container">
 
 
         <a
             href="#home"
-            class="logo"
+            class="brand"
         >
 
-            <span class="logo-icon">
+            <span class="brand-icon">
                 🔗
             </span>
 
-            <span>
+            <span class="brand-text">
                 LinkQR
             </span>
 
         </a>
 
 
-        <nav class="nav-menu">
+        <nav class="nav-links">
 
             <a href="#home">
                 Home
@@ -64,19 +64,31 @@
             </a>
 
             <a href="#history">
-                History
+                My QR Codes
             </a>
 
         </nav>
 
 
-        <button
-            id="themeBtn"
-            class="theme-btn"
-            title="Change Theme"
-        >
-            🌙
-        </button>
+        <div class="nav-actions">
+
+            <button
+                id="themeBtn"
+                class="icon-btn"
+                title="Toggle theme"
+            >
+                🌙
+            </button>
+
+
+            <a
+                href="#generator"
+                class="nav-create-btn"
+            >
+                Create QR
+            </a>
+
+        </div>
 
 
     </div>
@@ -85,65 +97,185 @@
 
 
 
-<!-- =========================================
-     MAIN
-========================================= -->
+<!-- ==================================================
+     HERO
+================================================== -->
 
 <main>
 
-
-<!-- =========================================
-     HERO
-========================================= -->
 
 <section
     id="home"
     class="hero"
 >
 
-    <div class="hero-content">
+
+    <div class="container hero-grid">
 
 
-        <div class="badge">
-            ⚡ PROFESSIONAL QR GENERATOR
+        <div class="hero-content">
+
+
+            <div class="hero-badge">
+                ⚡ PROFESSIONAL QR STUDIO
+            </div>
+
+
+            <h1>
+
+                Create
+
+                <span>
+                    beautiful
+                </span>
+
+                QR Codes
+
+            </h1>
+
+
+            <p>
+
+                Turn links, text, Wi-Fi,
+                email and phone numbers
+                into customizable QR Codes
+                in seconds.
+
+            </p>
+
+
+            <div class="hero-actions">
+
+
+                <a
+                    href="#generator"
+                    class="primary-btn"
+                >
+
+                    Start Creating
+
+                    <span>
+                        →
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="#features"
+                    class="secondary-btn"
+                >
+
+                    Explore Features
+
+                </a>
+
+
+            </div>
+
+
+            <div class="hero-stats">
+
+
+                <div class="stat">
+
+                    <strong>
+                        5+
+                    </strong>
+
+                    <span>
+                        QR Types
+                    </span>
+
+                </div>
+
+
+                <div class="stat">
+
+                    <strong>
+                        PNG
+                    </strong>
+
+                    <span>
+                        Export
+                    </span>
+
+                </div>
+
+
+                <div class="stat">
+
+                    <strong>
+                        Free
+                    </strong>
+
+                    <span>
+                        To Use
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
         </div>
 
 
-        <h1>
 
-            Create
+        <!-- HERO PREVIEW -->
 
-            <span>
-                Powerful
-            </span>
-
-            QR Codes
-
-        </h1>
+        <div class="hero-preview">
 
 
-        <p>
+            <div class="floating-card card-top">
 
-            Create beautiful,
-            customizable and
-            downloadable QR Codes
-            in seconds.
+                <span>
+                    ⚡
+                </span>
 
-        </p>
+                Fast Generator
+
+            </div>
 
 
-        <a
-            href="#generator"
-            class="hero-btn"
-        >
+            <div class="hero-qr-card">
 
-            Start Creating
 
-            <span>
-                →
-            </span>
+                <div class="fake-qr">
 
-        </a>
+                    <span>
+                        🔗
+                    </span>
+
+                </div>
+
+
+                <div class="hero-qr-info">
+
+                    <strong>
+                        Your QR Code
+                    </strong>
+
+                    <span>
+                        Ready to scan
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="floating-card card-bottom">
+
+                🎨
+                Fully Customizable
+
+            </div>
+
+
+        </div>
 
 
     </div>
@@ -152,9 +284,9 @@
 
 
 
-<!-- =========================================
+<!-- ==================================================
      GENERATOR
-========================================= -->
+================================================== -->
 
 <section
     id="generator"
@@ -162,114 +294,161 @@
 >
 
 
-    <div class="section-title">
+    <div class="container">
 
 
-        <span class="section-badge">
-            QR GENERATOR
-        </span>
+        <div class="section-heading">
 
+            <span class="section-label">
+                QR STUDIO
+            </span>
 
-        <h2>
-            Professional QR Studio
-        </h2>
+            <h2>
+                Create Your QR Code
+            </h2>
 
+            <p>
+                Customize your QR Code
+                exactly the way you want.
+            </p>
 
-        <p>
-            Customize every part of
-            your QR Code.
-        </p>
-
-
-    </div>
-
-
-
-    <div class="advanced-generator">
+        </div>
 
 
 
-        <!-- =================================
-             SETTINGS
-        ================================== -->
-
-        <div class="settings-panel">
+        <div class="studio-layout">
 
 
-            <h3>
-                ⚙️ Customize QR Code
-            </h3>
+            <!-- ======================================
+                 LEFT SETTINGS
+            ======================================= -->
+
+            <aside class="studio-sidebar">
+
+
+                <div class="panel-title">
+
+                    <div>
+
+                        <span>
+                            ⚙️
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                QR Content
+                            </h3>
+
+                            <p>
+                                Choose what to encode
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
 
 
 
-            <!-- QR TYPE -->
+                <!-- QR TYPES -->
 
-            <div class="form-group">
-
-                <label>
-                    QR Type
-                </label>
-
-
-                <div class="type-buttons">
+                <div class="qr-types">
 
 
                     <button
-                        class="type-btn active"
+                        class="qr-type active"
                         data-type="url"
                     >
-                        🔗 URL
+
+                        <span>
+                            🔗
+                        </span>
+
+                        <small>
+                            URL
+                        </small>
+
                     </button>
 
 
                     <button
-                        class="type-btn"
+                        class="qr-type"
                         data-type="text"
                     >
-                        📝 Text
+
+                        <span>
+                            📝
+                        </span>
+
+                        <small>
+                            Text
+                        </small>
+
                     </button>
 
 
                     <button
-                        class="type-btn"
+                        class="qr-type"
                         data-type="wifi"
                     >
-                        📶 Wi-Fi
+
+                        <span>
+                            📶
+                        </span>
+
+                        <small>
+                            Wi-Fi
+                        </small>
+
                     </button>
 
 
                     <button
-                        class="type-btn"
+                        class="qr-type"
                         data-type="email"
                     >
-                        📧 Email
+
+                        <span>
+                            📧
+                        </span>
+
+                        <small>
+                            Email
+                        </small>
+
                     </button>
 
 
                     <button
-                        class="type-btn"
+                        class="qr-type"
                         data-type="phone"
                     >
-                        📞 Phone
+
+                        <span>
+                            📞
+                        </span>
+
+                        <small>
+                            Phone
+                        </small>
+
                     </button>
 
 
                 </div>
 
-            </div>
 
 
+                <!-- ==================================
+                     URL FORM
+                =================================== -->
 
-            <!-- =================================
-                 URL
-            ================================== -->
-
-            <div
-                id="urlForm"
-                class="qr-form"
-            >
-
-                <div class="form-group">
+                <div
+                    id="urlForm"
+                    class="content-form"
+                >
 
                     <label>
                         Website URL
@@ -277,27 +456,28 @@
 
 
                     <input
-                        type="url"
                         id="urlInput"
+                        type="url"
                         placeholder="https://example.com"
                     >
 
+
+                    <span class="input-help">
+                        Enter a complete website address.
+                    </span>
+
                 </div>
 
-            </div>
 
 
+                <!-- ==================================
+                     TEXT FORM
+                =================================== -->
 
-            <!-- =================================
-                 TEXT
-            ================================== -->
-
-            <div
-                id="textForm"
-                class="qr-form hidden"
-            >
-
-                <div class="form-group">
+                <div
+                    id="textForm"
+                    class="content-form hidden"
+                >
 
                     <label>
                         Text
@@ -310,23 +490,19 @@
                         placeholder="Enter your text..."
                     ></textarea>
 
+
                 </div>
 
-            </div>
 
 
+                <!-- ==================================
+                     WIFI FORM
+                =================================== -->
 
-            <!-- =================================
-                 WIFI
-            ================================== -->
-
-            <div
-                id="wifiForm"
-                class="qr-form hidden"
-            >
-
-
-                <div class="form-group">
+                <div
+                    id="wifiForm"
+                    class="content-form hidden"
+                >
 
                     <label>
                         Wi-Fi Name
@@ -334,15 +510,11 @@
 
 
                     <input
-                        type="text"
                         id="wifiName"
+                        type="text"
                         placeholder="My Wi-Fi"
                     >
 
-                </div>
-
-
-                <div class="form-group">
 
                     <label>
                         Password
@@ -350,15 +522,11 @@
 
 
                     <input
-                        type="text"
                         id="wifiPassword"
-                        placeholder="Wi-Fi Password"
+                        type="text"
+                        placeholder="Wi-Fi password"
                     >
 
-                </div>
-
-
-                <div class="form-group">
 
                     <label>
                         Security
@@ -386,21 +554,15 @@
                 </div>
 
 
-            </div>
 
+                <!-- ==================================
+                     EMAIL FORM
+                =================================== -->
 
-
-            <!-- =================================
-                 EMAIL
-            ================================== -->
-
-            <div
-                id="emailForm"
-                class="qr-form hidden"
-            >
-
-
-                <div class="form-group">
+                <div
+                    id="emailForm"
+                    class="content-form hidden"
+                >
 
                     <label>
                         Email Address
@@ -408,15 +570,11 @@
 
 
                     <input
-                        type="email"
                         id="emailAddress"
+                        type="email"
                         placeholder="example@gmail.com"
                     >
 
-                </div>
-
-
-                <div class="form-group">
 
                     <label>
                         Subject
@@ -424,15 +582,11 @@
 
 
                     <input
-                        type="text"
                         id="emailSubject"
-                        placeholder="Subject"
+                        type="text"
+                        placeholder="Email subject"
                     >
 
-                </div>
-
-
-                <div class="form-group">
 
                     <label>
                         Message
@@ -448,20 +602,15 @@
                 </div>
 
 
-            </div>
 
+                <!-- ==================================
+                     PHONE FORM
+                =================================== -->
 
-
-            <!-- =================================
-                 PHONE
-            ================================== -->
-
-            <div
-                id="phoneForm"
-                class="qr-form hidden"
-            >
-
-                <div class="form-group">
+                <div
+                    id="phoneForm"
+                    class="content-form hidden"
+                >
 
                     <label>
                         Phone Number
@@ -469,335 +618,92 @@
 
 
                     <input
-                        type="tel"
                         id="phoneInput"
+                        type="tel"
                         placeholder="+855 12 345 678"
                     >
 
                 </div>
 
-            </div>
 
 
+                <!-- ==================================
+                     CUSTOMIZATION
+                =================================== -->
 
-            <!-- =================================
-                 COLORS
-            ================================== -->
+                <div class="customization">
 
-            <div class="settings-row">
 
-
-                <div class="form-group">
-
-                    <label>
-                        QR Color
-                    </label>
-
-
-                    <div class="color-input">
-
-
-                        <input
-                            type="color"
-                            id="qrColor"
-                            value="#000000"
-                        >
-
-
-                        <span
-                            id="qrColorValue"
-                        >
-                            #000000
-                        </span>
-
-
-                    </div>
-
-                </div>
-
-
-
-                <div class="form-group">
-
-                    <label>
-                        Background
-                    </label>
-
-
-                    <div class="color-input">
-
-
-                        <input
-                            type="color"
-                            id="bgColor"
-                            value="#ffffff"
-                        >
-
-
-                        <span
-                            id="bgColorValue"
-                        >
-                            #FFFFFF
-                        </span>
-
-
-                    </div>
-
-                </div>
-
-
-            </div>
-
-
-
-            <!-- =================================
-                 SIZE
-            ================================== -->
-
-            <div class="form-group">
-
-                <label>
-                    QR Size
-                </label>
-
-
-                <select
-                    id="qrSize"
-                >
-
-                    <option value="300">
-                        300 × 300
-                    </option>
-
-                    <option
-                        value="500"
-                        selected
-                    >
-                        500 × 500
-                    </option>
-
-                    <option value="700">
-                        700 × 700
-                    </option>
-
-                    <option value="1000">
-                        1000 × 1000
-                    </option>
-
-                </select>
-
-            </div>
-
-
-
-            <!-- =================================
-                 LOGO
-            ================================== -->
-
-            <div class="form-group">
-
-                <label>
-                    Logo
-                </label>
-
-
-                <input
-                    type="file"
-                    id="logoInput"
-                    accept="image/png,image/jpeg,image/webp"
-                >
-
-
-                <small>
-                    PNG, JPG or WEBP
-                </small>
-
-            </div>
-
-
-
-            <!-- =================================
-                 LOGO SETTINGS
-            ================================== -->
-
-            <div
-                id="logoSettings"
-                class="logo-settings"
-            >
-
-
-                <div class="form-group">
-
-                    <label>
-                        Logo Size
-                    </label>
-
-
-                    <input
-                        type="range"
-                        id="logoSize"
-                        min="30"
-                        max="100"
-                        value="55"
-                    >
-
-
-                    <div class="range-value">
+                    <div class="customization-title">
 
                         <span>
-                            Size
+                            🎨
                         </span>
 
-                        <strong id="logoSizeValue">
-                            55px
+                        <strong>
+                            Customization
                         </strong>
 
                     </div>
 
 
-                </div>
+
+                    <!-- COLORS -->
+
+                    <div class="custom-row">
+
+
+                        <div class="custom-field">
+
+                            <label>
+                                QR Color
+                            </label>
+
+
+                            <div class="color-control">
+
+                                <input
+                                    id="qrColor"
+                                    type="color"
+                                    value="#111827"
+                                >
+
+
+                                <span
+                                    id="qrColorValue"
+                                >
+                                    #111827
+                                </span>
+
+                            </div>
+
+                        </div>
 
 
 
-                <div class="form-group">
+                        <div class="custom-field">
 
-                    <label>
-                        Logo Background
-                    </label>
-
-
-                    <div class="color-input">
+                            <label>
+                                Background
+                            </label>
 
 
-                        <input
-                            type="color"
-                            id="logoBgColor"
-                            value="#ffffff"
-                        >
+                            <div class="color-control">
+
+                                <input
+                                    id="bgColor"
+                                    type="color"
+                                    value="#ffffff"
+                                >
 
 
-                        <span
-                            id="logoBgColorValue"
-                        >
-                            #FFFFFF
-                        </span>
+                                <span
+                                    id="bgColorValue"
+                                >
+                                    #FFFFFF
+                                </span>
 
-
-                    </div>
-
-
-                </div>
-
-
-            </div>
-
-
-
-            <!-- =================================
-                 GENERATE
-            ================================== -->
-
-            <button
-                id="generateAdvancedBtn"
-                class="generate-btn"
-            >
-
-                ⚡ Generate QR Code
-
-            </button>
-
-
-        </div>
-
-
-
-        <!-- =================================
-             PREVIEW
-        ================================== -->
-
-        <div class="preview-panel">
-
-
-            <div class="preview-header">
-
-
-                <h3>
-                    👀 Live Preview
-                </h3>
-
-
-                <span id="qrStatus">
-                    Ready
-                </span>
-
-
-            </div>
-
-
-
-            <div class="qr-preview">
-
-
-                <!-- EMPTY -->
-
-                <div
-                    id="qrEmpty"
-                    class="qr-empty"
-                >
-
-                    <div class="empty-icon">
-                        📱
-                    </div>
-
-
-                    <h3>
-                        QR Code Preview
-                    </h3>
-
-
-                    <p>
-                        Configure your QR Code
-                        and click Generate.
-                    </p>
-
-
-                </div>
-
-
-
-                <!-- RESULT -->
-
-                <div
-                    id="qrResult"
-                    class="qr-result"
-                >
-
-
-                    <div
-                        id="qrCanvas"
-                        class="qr-canvas"
-                    >
-
-
-                        <img
-                            id="qrImage"
-                            src=""
-                            alt="QR Code"
-                        >
-
-
-                        <div
-                            id="logoWrapper"
-                            class="logo-wrapper"
-                        >
-
-
-                            <img
-                                id="qrLogo"
-                                src=""
-                                alt="Logo"
-                            >
-
+                            </div>
 
                         </div>
 
@@ -806,47 +712,198 @@
 
 
 
-                    <div class="qr-info">
+                    <!-- PATTERN -->
+
+                    <div class="custom-field">
+
+                        <label>
+                            QR Pattern
+                        </label>
 
 
-                        <h3>
-                            QR Code Ready 🎉
-                        </h3>
-
-
-                        <p
-                            id="qrContent"
+                        <select
+                            id="qrPattern"
                         >
-                            Your content
-                            will appear here.
-                        </p>
 
+                            <option value="square">
+                                Square
+                            </option>
+
+                            <option value="dots">
+                                Dots
+                            </option>
+
+                            <option value="rounded">
+                                Rounded
+                            </option>
+
+                        </select>
 
                     </div>
 
 
 
-                    <div class="qr-actions">
+                    <!-- EYE -->
+
+                    <div class="custom-field">
+
+                        <label>
+                            Eye Style
+                        </label>
 
 
-                        <button
-                            id="downloadBtn"
-                            class="action-btn download-btn"
+                        <select
+                            id="eyeStyle"
                         >
 
-                            📥 Download PNG
+                            <option value="square">
+                                Square
+                            </option>
 
-                        </button>
+                            <option value="rounded">
+                                Rounded
+                            </option>
+
+                            <option value="circle">
+                                Circle
+                            </option>
+
+                        </select>
+
+                    </div>
 
 
-                        <button
-                            id="copyBtn"
-                            class="action-btn copy-btn"
+
+                    <!-- SIZE -->
+
+                    <div class="custom-field">
+
+                        <label>
+                            QR Size
+                        </label>
+
+
+                        <select
+                            id="qrSize"
                         >
 
-                            📋 Copy Content
+                            <option value="300">
+                                300 × 300
+                            </option>
 
-                        </button>
+                            <option
+                                value="500"
+                                selected
+                            >
+                                500 × 500
+                            </option>
+
+                            <option value="700">
+                                700 × 700
+                            </option>
+
+                            <option value="1000">
+                                1000 × 1000
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <!-- LOGO -->
+
+                    <div class="custom-field">
+
+                        <label>
+                            Logo
+                        </label>
+
+
+                        <input
+                            id="logoInput"
+                            type="file"
+                            accept="image/png,image/jpeg,image/webp"
+                        >
+
+
+                        <span class="input-help">
+                            PNG, JPG or WEBP
+                        </span>
+
+                    </div>
+
+
+
+                    <!-- LOGO OPTIONS -->
+
+                    <div
+                        id="logoOptions"
+                        class="logo-options hidden"
+                    >
+
+
+                        <div class="custom-field">
+
+                            <label>
+                                Logo Size
+                            </label>
+
+
+                            <input
+                                id="logoSize"
+                                type="range"
+                                min="30"
+                                max="100"
+                                value="55"
+                            >
+
+
+                            <div class="range-info">
+
+                                <span>
+                                    Size
+                                </span>
+
+                                <strong
+                                    id="logoSizeValue"
+                                >
+                                    55%
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="custom-field">
+
+                            <label>
+                                Logo Shape
+                            </label>
+
+
+                            <select
+                                id="logoShape"
+                            >
+
+                                <option value="square">
+                                    Square
+                                </option>
+
+                                <option value="rounded">
+                                    Rounded
+                                </option>
+
+                                <option value="circle">
+                                    Circle
+                                </option>
+
+                            </select>
+
+                        </div>
 
 
                     </div>
@@ -855,7 +912,231 @@
                 </div>
 
 
-            </div>
+
+                <!-- GENERATE -->
+
+                <button
+                    id="generateBtn"
+                    class="generate-btn"
+                >
+
+                    <span>
+                        ⚡
+                    </span>
+
+                    Generate QR Code
+
+                </button>
+
+
+            </aside>
+
+
+
+            <!-- ======================================
+                 RIGHT PREVIEW
+            ======================================= -->
+
+            <section class="studio-preview">
+
+
+                <div class="preview-topbar">
+
+
+                    <div>
+
+                        <span>
+                            👀
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Live Preview
+                            </h3>
+
+                            <p>
+                                Your QR Code
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <span
+                        id="qrStatus"
+                        class="status-ready"
+                    >
+                        Ready
+                    </span>
+
+
+                </div>
+
+
+
+                <div class="preview-area">
+
+
+                    <!-- EMPTY -->
+
+                    <div
+                        id="emptyPreview"
+                        class="empty-preview"
+                    >
+
+                        <div class="empty-qr-icon">
+                            QR
+                        </div>
+
+
+                        <h3>
+                            Your QR Code
+                        </h3>
+
+
+                        <p>
+                            Enter your content
+                            and click Generate.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- RESULT -->
+
+                    <div
+                        id="qrResult"
+                        class="qr-result hidden"
+                    >
+
+
+                        <div
+                            id="qrCanvasWrapper"
+                            class="qr-canvas-wrapper"
+                        >
+
+
+                            <img
+                                id="qrImage"
+                                src=""
+                                alt="Generated QR Code"
+                            >
+
+
+                            <div
+                                id="logoWrapper"
+                                class="logo-wrapper"
+                            >
+
+
+                                <img
+                                    id="qrLogo"
+                                    src=""
+                                    alt="QR Logo"
+                                >
+
+                            </div>
+
+
+                        </div>
+
+
+
+                        <div class="result-info">
+
+
+                            <span class="result-success">
+                                ✓ QR Code Ready
+                            </span>
+
+
+                            <p
+                                id="qrContent"
+                            >
+                                Your content
+                                will appear here.
+                            </p>
+
+
+                        </div>
+
+
+
+                        <!-- EXPORT -->
+
+                        <div class="export-section">
+
+
+                            <div class="export-title">
+
+                                <span>
+                                    📥
+                                </span>
+
+                                Export
+
+                            </div>
+
+
+                            <div class="export-buttons">
+
+
+                                <button
+                                    id="downloadPng"
+                                    class="export-btn primary"
+                                >
+
+                                    PNG
+
+                                </button>
+
+
+                                <button
+                                    id="downloadJpg"
+                                    class="export-btn"
+                                >
+
+                                    JPG
+
+                                </button>
+
+
+                                <button
+                                    id="downloadSvg"
+                                    class="export-btn"
+                                >
+
+                                    SVG
+
+                                </button>
+
+
+                                <button
+                                    id="copyContent"
+                                    class="export-btn"
+                                >
+
+                                    📋 Copy
+
+                                </button>
+
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </section>
 
 
         </div>
@@ -863,111 +1144,122 @@
 
     </div>
 
-
 </section>
 
 
 
-<!-- =========================================
+<!-- ==================================================
      FEATURES
-========================================= -->
+================================================== -->
 
 <section
+    id="features"
     class="features-section"
 >
 
 
-    <div class="section-title">
+    <div class="container">
 
 
-        <span class="section-badge">
-            FEATURES
-        </span>
+        <div class="section-heading">
 
+            <span class="section-label">
+                FEATURES
+            </span>
 
-        <h2>
-            Powerful Features
-        </h2>
-
-
-    </div>
-
-
-
-    <div class="features-grid">
-
-
-        <div class="feature-card">
-
-            <div class="feature-icon">
-                🔗
-            </div>
-
-            <h3>
-                URL QR
-            </h3>
+            <h2>
+                Everything You Need
+            </h2>
 
             <p>
-                Convert website links
-                into QR Codes.
+                A simple QR toolkit
+                with powerful customization.
             </p>
 
         </div>
 
 
 
-        <div class="feature-card">
-
-            <div class="feature-icon">
-                📶
-            </div>
-
-            <h3>
-                Wi-Fi QR
-            </h3>
-
-            <p>
-                Share Wi-Fi information
-                quickly.
-            </p>
-
-        </div>
+        <div class="features-grid">
 
 
+            <article class="feature-card">
 
-        <div class="feature-card">
+                <div class="feature-icon">
+                    🔗
+                </div>
 
-            <div class="feature-icon">
-                🎨
-            </div>
+                <h3>
+                    Multiple QR Types
+                </h3>
 
-            <h3>
-                Custom Colors
-            </h3>
+                <p>
+                    Create QR Codes for
+                    links, text, Wi-Fi,
+                    email and phone.
+                </p>
 
-            <p>
-                Choose your own QR
-                and background colors.
-            </p>
-
-        </div>
+            </article>
 
 
 
-        <div class="feature-card">
+            <article class="feature-card">
 
-            <div class="feature-icon">
-                🖼️
-            </div>
+                <div class="feature-icon">
+                    🎨
+                </div>
 
-            <h3>
-                Logo Support
-            </h3>
+                <h3>
+                    Custom Design
+                </h3>
 
-            <p>
-                Add your own logo
-                to the QR Code.
-            </p>
+                <p>
+                    Change colors,
+                    patterns, eye styles
+                    and logo settings.
+                </p>
+
+            </article>
+
+
+
+            <article class="feature-card">
+
+                <div class="feature-icon">
+                    📥
+                </div>
+
+                <h3>
+                    Easy Export
+                </h3>
+
+                <p>
+                    Download your QR Code
+                    in multiple formats.
+                </p>
+
+            </article>
+
+
+
+            <article class="feature-card">
+
+                <div class="feature-icon">
+                    🔒
+                </div>
+
+                <h3>
+                    Privacy Focused
+                </h3>
+
+                <p>
+                    Your QR history is
+                    stored locally in
+                    your browser.
+                </p>
+
+            </article>
+
 
         </div>
 
@@ -978,9 +1270,9 @@
 
 
 
-<!-- =========================================
+<!-- ==================================================
      HISTORY
-========================================= -->
+================================================== -->
 
 <section
     id="history"
@@ -988,40 +1280,36 @@
 >
 
 
-    <div class="section-title">
+    <div class="container">
 
 
-        <span class="section-badge">
-            HISTORY
-        </span>
+        <div class="section-heading history-heading">
 
 
-        <h2>
-            Recent QR Codes
-        </h2>
+            <div>
 
+                <span class="section-label">
+                    MY QR CODES
+                </span>
 
-    </div>
+                <h2>
+                    QR History
+                </h2>
 
+                <p>
+                    Manage your recently
+                    generated QR Codes.
+                </p>
 
-
-    <div class="history-card">
-
-
-        <div class="history-header">
-
-
-            <h3>
-                🕘 QR History
-            </h3>
+            </div>
 
 
             <button
-                id="clearHistoryBtn"
+                id="clearHistory"
                 class="clear-history-btn"
             >
 
-                🗑️ Clear History
+                🗑️ Clear All
 
             </button>
 
@@ -1029,6 +1317,41 @@
         </div>
 
 
+
+        <!-- SEARCH -->
+
+        <div class="history-tools">
+
+
+            <div class="search-box">
+
+                <span>
+                    🔎
+                </span>
+
+
+                <input
+                    id="historySearch"
+                    type="search"
+                    placeholder="Search your QR Codes..."
+                >
+
+            </div>
+
+
+            <span
+                id="historyCount"
+                class="history-count"
+            >
+                0 QR Codes
+            </span>
+
+
+        </div>
+
+
+
+        <!-- LIST -->
 
         <div
             id="historyList"
@@ -1041,15 +1364,28 @@
                 class="empty-history"
             >
 
-                <div>
+                <div class="history-empty-icon">
                     📝
                 </div>
 
 
+                <h3>
+                    No QR Codes Yet
+                </h3>
+
+
                 <p>
-                    No QR Code history yet.
+                    Your generated QR Codes
+                    will appear here.
                 </p>
 
+
+                <a
+                    href="#generator"
+                    class="small-create-btn"
+                >
+                    Create Your First QR
+                </a>
 
             </div>
 
@@ -1059,6 +1395,55 @@
 
     </div>
 
+</section>
+
+
+
+<!-- ==================================================
+     CTA
+================================================== -->
+
+<section class="cta-section">
+
+
+    <div class="container">
+
+
+        <div class="cta-card">
+
+
+            <div>
+
+                <span class="cta-icon">
+                    ⚡
+                </span>
+
+
+                <h2>
+                    Ready to Create?
+                </h2>
+
+
+                <p>
+                    Generate your first
+                    custom QR Code today.
+                </p>
+
+            </div>
+
+
+            <a
+                href="#generator"
+                class="cta-btn"
+            >
+                Create QR →
+            </a>
+
+
+        </div>
+
+
+    </div>
 
 </section>
 
@@ -1067,57 +1452,106 @@
 
 
 
-<!-- =========================================
+<!-- ==================================================
      FOOTER
-========================================= -->
+================================================== -->
 
 <footer class="footer">
 
 
-    <div class="footer-container">
+    <div class="container">
 
 
-        <div class="footer-logo">
-            🔗 LinkQR
+        <div class="footer-main">
+
+
+            <div class="footer-brand">
+
+                <a
+                    href="#home"
+                    class="brand"
+                >
+
+                    <span class="brand-icon">
+                        🔗
+                    </span>
+
+                    <span>
+                        LinkQR
+                    </span>
+
+                </a>
+
+
+                <p>
+                    Simple, beautiful and
+                    powerful QR generation.
+                </p>
+
+            </div>
+
+
+
+            <div class="footer-links">
+
+                <a href="#home">
+                    Home
+                </a>
+
+                <a href="#generator">
+                    Generator
+                </a>
+
+                <a href="#features">
+                    Features
+                </a>
+
+                <a href="#history">
+                    History
+                </a>
+
+            </div>
+
+
         </div>
 
 
-        <p>
-            Professional QR Code Generator
-        </p>
+        <div class="footer-bottom">
 
+            <span>
+                © 2026 LinkQR
+            </span>
 
-        <div class="footer-line"></div>
+            <span>
+                Built with HTML, CSS & JavaScript
+            </span>
 
-
-        <p class="copyright">
-            © 2026 LinkQR.
-            All rights reserved.
-            _____Meng Hor_____
-        </p>
+        </div>
 
 
     </div>
-
 
 </footer>
 
 
 
-<!-- =========================================
+<!-- ==================================================
      BACK TO TOP
-========================================= -->
+================================================== -->
 
 <button
     id="backToTop"
     class="back-to-top"
+    aria-label="Back to top"
 >
-
     ↑
-
 </button>
 
 
+
+<!-- ==================================================
+     SCRIPT
+================================================== -->
 
 <script src="script.js"></script>
 
